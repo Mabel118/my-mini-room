@@ -16,4 +16,23 @@
   .div9 { grid-area: 6 / 6 / 7 / 7; }
   .div10 { grid-area: 6 / 10 / 7 / 11; }
   .div11 { grid-area: 4 / 6 / 5 / 7; }
+  .image-container {
+    position: relative; /* Ensures that the image is positioned relative to the container */
+}
+
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px; /* Adjust width */
+    height: auto; /* Keeps aspect ratio */
+    z-index: 1000; /* Ensures it is on top of the grid */
+}
+
+body {
+  background: linear-gradient(to bottom, #f9f4ff 0%, #5d4b7b 90%);
+  /* You can replace the color codes with your preferred colors */
+}
+
   
